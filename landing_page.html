@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Fitness Guide</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="full-page">
+        <div class="navbar">
+            <div>
+                <img src="images/logo.jpg" alt="Logo" class="logo">
+                <a href='landing_page.html'>Fitness Guide</a>
+            </div>
+            <nav>
+                <ul id='MenuItems'>
+                    <li><a href='#home' onclick="scrollToSection('home')">Home</a></li>
+                    <li><a href='#nutrition' onclick="scrollToSection('nutrition')">Nutrition</a></li>
+                    <li><a href='#workouts' onclick="scrollToSection('workouts')">Workouts</a></li>
+                    <li><a href='#about' onclick="scrollToSection('about')">About</a></li>
+                    <li><button id="search-button" onclick="openSearchDialog()">Search</button></li>
+                    <li><button class='loginbtn' onclick="document.getElementById('login-form').style.display='block'" style="width:auto;">Login</button></li>
+                </ul>
+            </nav>
+        </div>
+            <section class="custom-section alternate" id="home">
+                <div class="content-container">
+                    <div class="image-container">
+                        <img src="images/home.jpg" alt="Home Image">
+                    </div>
+                    <div class="text-container">
+                        <h2>Home</h2>
+                        <p>Welcome to Your Fitness Guide, your ultimate destination for achieving a healthier lifestyle. 
+                            Explore effective workout routines tailored to your fitness goals. 
+                            From beginner-friendly exercises to advanced challenges, 
+                            our expert guides and nutrition tips will empower you on your fitness journey. 
+                            Start today for a fitter, stronger you!</p>
+                    </div>
+                </div>
+            </section>
+            <div class="section-divider"></div>
+            <section class="custom-section" id="nutrition">
+                <div class="content-container">
+                    <div class="image-container">
+                        <img src="images/nutrition.jpg" alt="Nutrition Image">
+                    </div>
+                    <div class="text-container">
+                        <h2>Nutrition</h2>
+                        <p>Fuel your fitness journey with our Nutrition Guide, 
+                            a treasure trove of expert advice and delicious recipes. 
+                            Explore tailored nutrition plans designed to enhance your workouts 
+                            and promote overall well-being. From balanced meals to smart snacks, 
+                            discover the key to optimal nutrition, supporting your body and 
+                            maximizing your fitness results.</p>
+                            <a href="https://superherojacked.com/nutrition-pillars/" target="_blank" class="section-button">Diet Plans</a>
+                    </div>
+                </div>
+            </section>
+            <div class="section-divider"></div>
+            <section class="custom-section alternate" id="workouts">
+                <div class="content-container">
+                    <div class="image-container">
+                        <img src="images/workout.jpg" alt="Workouts Image">
+                    </div>
+                    <div class="text-container">
+                        <h2>Workouts</h2>
+                        <p>Dive into our Workouts Page, a dynamic hub of fitness inspiration. 
+                            Unleash the power of diverse exercise routines crafted for every fitness level. 
+                            From strength training to cardio, find engaging workouts that align with your goals. 
+                            Elevate your fitness journey with expert guidance and transform your body, one workout at a time.</p>
+                            <a href="https://superherojacked.com/workout-database/" target="_blank" class="section-button">Gym Plans</a>
+                    </div>
+                </div>
+            </section>
+            <div class="section-divider"></div>
+            <section class="custom-section" id="about">
+                <div class="content-container">
+                    <div class="image-container">
+                        <img src="images/about.jpg" alt="About Image">
+                    </div>
+                    <div class="text-container">
+                        <h2>About Us</h2>
+                        <p>Welcome to our fitness family! At Your Fitness Guide, 
+                            we're passionate about empowering your health journey. 
+                            Reach out to us for personalized advice and support.</p>
+                        <q>Email: funkylegend@gmail.com </q>
+                        <k>Phone: +1 (555) 123-4567.<br></k>
+                        <z>Together, let's achieve your fitness goals 
+                            and embrace a healthier lifestyle.</z>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div id="search-dialog">
+            <span id="close-search-dialog" onclick="closeSearchDialog()">&#10006;</span>
+            <h2>Creator Details</h2>
+            <p>Name: Charan Repala</p>
+            <p>Email: resc653vc@gmail.com</p>
+        </div>
+        <div id='login-form'class='login-page'>
+            <div class="form-box">
+                <div class='button-box'>
+                    <div id='btn'></div>
+                    <button type='button'onclick='login()'class='toggle-btn'>Log In</button>
+                    <button type='button'onclick='register()'class='toggle-btn'>Register</button>
+                </div>
+                <form id='login' class='input-group-login'>
+                    <input type='text'class='input-field'placeholder='Email Id' required >
+		    <input type='password'class='input-field'placeholder='Enter Password' required>
+		    <input type='checkbox'class='check-box'><span>Remember Password</span>
+		    <button type='submit'class='submit-btn'>Log in</button>
+		 </form>
+		 <form id='register' class='input-group-register'>
+		     <input type='text'class='input-field'placeholder='First Name' required>
+		     <input type='text'class='input-field'placeholder='Last Name ' required>
+		     <input type='email'class='input-field'placeholder='Email Id' required>
+		     <input type='password'class='input-field'placeholder='Enter Password' required>
+		     <input type='password'class='input-field'placeholder='Confirm Password'  required>
+		     <input type='checkbox'class='check-box'><span>I agree to the terms and                                                   conditions</span>
+                    <button type='submit'class='submit-btn'>Register</button>
+	         </form>
+            </div>
+        </div>
+    </div>
+</body>
+<footer>
+    <div class="social-links">
+        <a href="https://www.instagram.com/cbum/?hl=en" target="_blank"><img src="images/insta.jpg" ></a>
+        <a href="https://github.com/" target="_blank"><img src="images/github.jpg" ></a>
+        <a href="https://twitter.com/c_bumstead?lang=en" target="_blank"><img src="images/twitter.jpg" ></a>
+        <a href="https://www.youtube.com/@athleanx" target="_blank"><img src="images/youtube.jpg" "></a>
+        <a href="https://www.facebook.com/Chris.Bumstead.Cbum/" target="_blank"><img src="images/fb.jpg" "></a>
+    </div>
+    <p>&copy; 2023 Your Fitness Guide. All rights reserved.</p>
+</footer>
+<script src="script.js"></script>
+</html>
