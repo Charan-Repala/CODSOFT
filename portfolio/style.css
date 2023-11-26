@@ -1,0 +1,116 @@
+/* Add/modify this in your existing CSS file */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    line-height: 1.6;
+}
+
+.logo-container img {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%; /* Make it round */
+    margin-right: 10px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav a:hover {
+    color: #ffd700; /* Change color on hover */
+}
+
+section {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    transition: box-shadow 0.3s ease; /* Add a subtle shadow on hover */
+}
+
+section:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+section h2 {
+    color: #333;
+}
+
+.project {
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.profile-photo {
+    display: block;
+    height: 200px;
+    width: 200px;
+    margin: 0 auto 20px; 
+    border-radius: 50%; 
+    border: 4px solid #fff; 
+}
+
+#education {
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+.education-item {
+    margin-bottom: 20px;
+    border-left: 3px solid #333;
+    padding-left: 10px;
+}
+
+#skills, #certifications, #clubs, #strengths {
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+#skills ul, #certifications .certification, #clubs ul, #strengths ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#skills ul li, #certifications .certification, #clubs ul li, #strengths ul li {
+    margin-bottom: 10px;
+    transition: transform 0.3s ease; /* Add a transformation on hover */
+}
+
+#skills ul li:hover, #certifications .certification:hover, #clubs ul li:hover, #strengths ul li:hover {
+    transform: scale(1.1); /* Enlarge on hover */
+}
